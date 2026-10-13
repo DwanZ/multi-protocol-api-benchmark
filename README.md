@@ -2,6 +2,8 @@
 
 Native Android diagnostic app that compares identical `GetCharacter` queries across **REST**, **GraphQL**, and **gRPC**, capturing latency, payload size, and client memory deltas per the project SDD.
 
+![Multi-Protocol Benchmark dashboard](docs/dashboard.png)
+
 ## Stack
 
 - Kotlin, Jetpack Compose (Material 3), Clean Architecture
@@ -22,13 +24,16 @@ gRPC latency reflects local stack cost (protobuf + channel), not internet RTT. P
 
 ## Build & run
 
-1. Open the project in Android Studio (Giraffe+ / AGP 8.7).
+**Gradle JVM:** use **JDK 17** (e.g. Android Studio `jbr-17`). Gradle 8.9 does not support running on Java 25.
+
+1. In Android Studio: **Settings → Build, Execution, Deployment → Build Tools → Gradle → Gradle JDK → `jbr-17`**
 2. Sync Gradle, then run the `app` configuration on an emulator or device with network access.
-3. Or from the project root:
+3. Or from the project root (with JDK 17 on `JAVA_HOME`):
 
 ```bash
 ./gradlew :app:assembleDebug
 ```
+
 
 ## App usage
 
