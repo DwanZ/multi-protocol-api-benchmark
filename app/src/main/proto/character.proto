@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.dwanz.multiprotocolbenchmark.grpc";
+option java_outer_classname = "CharacterProto";
+
+package character;
+
+message GetCharacterRequest {
+  int32 id = 1;
+}
+
+message Character {
+  int32 id = 1;
+  string name = 2;
+  string status = 3;
+  string species = 4;
+}
+
+service CharacterService {
+  rpc GetCharacter (GetCharacterRequest) returns (Character);
+}
