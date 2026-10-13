@@ -3,6 +3,9 @@
 build/
 .kotlin/
 
+# Local JDK used for CI/agent builds
+.jdk/
+
 # Local configuration file (sdk path, etc)
 local.properties
 

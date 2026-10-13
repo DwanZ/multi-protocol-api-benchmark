@@ -1,0 +1,10 @@
+type Query {
+  character(id: ID!): Character
+}
+
+type Character {
+  id: ID
+  name: String
+  status: String
+  species: String
+}
