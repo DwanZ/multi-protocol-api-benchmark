@@ -2,7 +2,7 @@
 
 Native Android diagnostic app that compares identical `GetCharacter` queries across **REST**, **GraphQL**, and **gRPC**, capturing latency, payload size, and client memory deltas per the project SDD.
 
-![Multi-Protocol Benchmark dashboard](docs/dashboard.png)
+<img src="docs/dashboard.png" alt="Multi-Protocol Benchmark dashboard" width="250"/>
 
 ## Stack
 
